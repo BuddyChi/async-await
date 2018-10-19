@@ -1,0 +1,23 @@
+{
+  "name": "async-await",
+  "version": "1.0.0",
+  "description": "",
+  "main": "async-await.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MarvenChi/async-await.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MarvenChi/async-await/issues"
+  },
+  "homepage": "https://github.com/MarvenChi/async-await#readme",
+  "dependencies": {
+    "needle": "^2.2.4",
+    "node-fetch": "^2.2.0"
+  }
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <div onclick='outer()'>
+        <div id='inner'>
+            test
+        </div>
+    </div>
+</body>
+<script>
+    function outer() {
+        console.log('click outer')
+    }
+
+    var inner = document.getElementById('inner');
+
+    inner.addEventListener('click',function(){
+        console.log('click inner0')
+    })
+
+    inner.addEventListener('click',function(){
+        console.log('click inner00')
+    })
+
+    document.getElementById('inner').onclick = function (e) {
+        console.log('click inner1')
+    }
+
+    document.getElementById('inner').onclick = function (e) {
+
+        console.log('click inner2')
+    }
+</script>
+
+</html>

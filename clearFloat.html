@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .wrapper{
+            border: 1px solid black;
+        }
+        .wrapper::after{
+            content: '';
+            display: block;
+            clear: both;
+            visibility: hidden;
+        }
+        .d1,.d2,.d3{
+            width: 100px;
+            height: 200px;
+            background: blueviolet;
+            margin: 10px;
+            float: left;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="d1">1</div>
+        <div class="d2">2</div>
+        <div class="d3">3</div>
+    </div>
+</body>
+</html>
